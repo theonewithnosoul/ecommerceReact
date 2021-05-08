@@ -1,19 +1,51 @@
 import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
+import Button from 'react-bootstrap/Button';
+import logo from '../components/images/logo.png';
+import favIcon from '../components/images/fav-icon.png';
+import buyIcon from '../components/images/buy-icon.png';
+import inicioIcon from '../components/images/inicio-icon.png';
+
+const background ={
+	backgroundColor: '#DB0C15'
+};
 
 const Navbarr = () => {
 	return (
-		<Navbar bg="light" expand="lg">
+		<Navbar  style={background}  expand="lg">
 			<div className="container d-flex justify-content-between">
-				<Navbar.Brand href="#home">Roomer</Navbar.Brand>
-				<Navbar.Toggle aria-controls="basic-navbar-nav" />
-				<Navbar.Collapse id="basic-navbar-nav">
-					<Nav className = "justify-content-end" >
-						<Nav.Link href="#home">Home</Nav.Link>
-						<Nav.Link href="#link">Link</Nav.Link>
-					</Nav>
-				</Navbar.Collapse>
+				<Navbar.Brand href="#home">
+					<img
+						src={logo}
+						width="150px"
+						className="d-inline-block align-top"
+						alt="logo"
+					/>
+				</Navbar.Brand>
+				<Nav className="justify-content-end" activeKey="/home">
+
+					<Navbar.Collapse id="basic-navbar-nav">
+						<Nav.Item>
+							<Nav.Link>
+								<Button className="mr-3" href="#"><img src={favIcon} width="23px" /></Button>{' '}
+							</Nav.Link>
+						</Nav.Item>
+
+						<Nav.Item>
+							<Nav.Link>
+								<Button className="mr-3" href="#"><img src={buyIcon} width="23px" /></Button>{' '}
+							</Nav.Link>
+						</Nav.Item>
+
+						<Nav.Item>
+							<Nav.Link>
+								<Button className="mr-3" href="#"><img src={inicioIcon} width="23px" /></Button>{' '}
+							</Nav.Link>
+						</Nav.Item>
+					</Navbar.Collapse>
+
+				</Nav>
 			</div>
 		</Navbar>
 	);

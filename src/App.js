@@ -5,11 +5,9 @@ import Navbarr from './components/Navbar';
 
 function App() {
 	return (
-		
 			<header>
 				<Navbarr/>
 			</header>
-		
 	);
 }
 
