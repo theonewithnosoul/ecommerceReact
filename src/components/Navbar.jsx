@@ -4,10 +4,11 @@ import Nav from 'react-bootstrap/Nav';
 import Button from 'react-bootstrap/Button';
 import logo from '../components/images/logo.png';
 import favIcon from '../components/images/fav-icon.png';
-import buyIcon from '../components/images/buy-icon.png';
-import inicioIcon from '../components/images/inicio-icon.png';
 
-const background ={
+import inicioIcon from '../components/images/inicio-icon.png';
+import CartWidget from './CartWidget';
+
+const background = {
 	backgroundColor: '#DB0C15'
 };
 
@@ -28,23 +29,22 @@ const Navbarr = () => {
 					<Navbar.Collapse id="basic-navbar-nav">
 						<Nav.Item>
 							<Nav.Link>
-								<Button className="mr-3" href="#"><img src={favIcon} width="23px" /></Button>{' '}
+								<Button className="mr-3" href="#"><img src={favIcon} alt="favorit icon" width="23px" /></Button>{' '}
 							</Nav.Link>
 						</Nav.Item>
 
 						<Nav.Item>
 							<Nav.Link>
-								<Button className="mr-3" href="#"><img src={buyIcon} width="23px" /></Button>{' '}
+							<CartWidget />
 							</Nav.Link>
 						</Nav.Item>
 
 						<Nav.Item>
 							<Nav.Link>
-								<Button className="mr-3" href="#"><img src={inicioIcon} width="23px" /></Button>{' '}
+								<Button className="mr-3" href="#"><img src={inicioIcon} alt="inicio icon" width="23px" /></Button>{' '}
 							</Nav.Link>
 						</Nav.Item>
 					</Navbar.Collapse>
-
 				</Nav>
 			</div>
 		</Navbar>
