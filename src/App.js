@@ -10,7 +10,7 @@ function App() {
 			<header>
 				<Navbarr />
 			</header>
-			<ItemListContainer/>
+			<ItemListContainer buyButton=' Comprar '/>
 		</body>
 
 	);
