@@ -23,7 +23,7 @@ const ItemListContainer = ({ buyButton }) => {
             </Card.Text>
             <div className="row">
               <ItemCount />
-              <Button variant="primary">{buyButton}</Button>
+              <Button className="mt-3" variant="primary">{buyButton}</Button>
             </div>
           </Card.Body>
         </Card></Col>
