@@ -22,17 +22,18 @@ const ItemCount = ({ value = 1, stock = 5 }) => {
 
     return (
         <>
-            <div className="row justify-content-center">
+            <div className="row d-flex justify-content-between p-3">
                 <div className="col-2">
-                    <Button disabled={counter <= 0} variant="outline-primary" onClick={handleSubstract} ><RemoveIcon fontSize="small" /></Button>
+                    <Button disabled={counter <= 0} variant="outline-primary" onClick={handleSubstract} ><RemoveIcon fontSize="medium" /></Button>
                 </div>
 
                 <div className="col-2">
-                    <p className="text-center" >{counter}</p>
+                 <Button className="text-center align-center" disabled variant="outline-primary"  >{counter}</Button>
+                    {/* <span className="text-center" variant="outline-primary" >{counter}</span> */}
                 </div>
 
                 <div className="col-2">
-                    <Button disabled={counter >= stock} variant="outline-primary" onClick={handleAdd}> <AddIcon fontSize="small" /></Button>
+                    <Button disabled={counter >= stock} variant="outline-primary" onClick={handleAdd}> <AddIcon fontSize="medium" /></Button>
                 </div>
             </div>
         </>

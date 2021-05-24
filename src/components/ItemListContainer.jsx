@@ -6,6 +6,12 @@ import ItemList from './ItemList';
 import Uno from '../components/images/stock/1.png';
 import Dos from '../components/images/stock/2.png';
 import Tres from '../components/images/stock/3.png';
+import Cuatro from '../components/images/stock/4.png';
+import Cinco from '../components/images/stock/5.png';
+import Seis from '../components/images/stock/6.png';
+import Siete from '../components/images/stock/7.png';
+import Ocho from '../components/images/stock/8.png';
+
 
 
 const ItemListContainer = () => {
@@ -42,9 +48,36 @@ const ItemListContainer = () => {
             type: 'buzo',
             stock: 3,
             price: 300,
-            image: Uno
+            image: Cuatro
+          },
+          {
+            id: 5,
+            type: 'buzo',
+            stock: 3,
+            price: 300,
+            image: Cinco
+          },
+          {
+            id: 6,
+            type: 'buzo',
+            stock: 3,
+            price: 300,
+            image: Seis
+          },
+          {
+            id: 7,
+            type: 'buzo',
+            stock: 3,
+            price: 300,
+            image: Siete
+          },
+          {
+            id: 8,
+            type: 'buzo',
+            stock: 3,
+            price: 300,
+            image: Ocho
           }
-
 
         ])
       }, 2000)

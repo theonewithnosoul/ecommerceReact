@@ -7,7 +7,7 @@ import ItemCount from './ItemCount';
 
 const Item = ({ buyButton, item }) => {
     return (
-        <div className="col-lg-3">
+        <div className=" mt-5 col-lg-3">
             <Card style={{ width: '18rem' }}>
                 <Card.Img variant="top" src={item.image} />
                 <Card.Body>
@@ -19,7 +19,7 @@ const Item = ({ buyButton, item }) => {
                     <div className="row">
                         <ItemCount />
                         <div key={item.price}>{item.price}</div>
-                        <Button className="mt-3" variant="primary">{buyButton}</Button>
+                        <Button className="mt-3 " variant="primary">{buyButton}</Button>
                     </div>
                 </Card.Body>
             </Card>
