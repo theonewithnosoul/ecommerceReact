@@ -1,0 +1,48 @@
+
+
+{
+    "stock": [
+        {
+            "id": 1,
+            "type": "Buzo",
+            "stock": 5,
+            "precio": 250,
+            "imagen": ".../images/1.png"
+            
+        },
+        {
+            "id": 2,
+            "type": "Buzo",
+            "stock": 5,
+            "precio": 250,
+            "imagen": ".../images/2.png"
+            
+        },
+        {
+            "id": 3,
+            "type": "Buzo",
+            "stock": 5,
+            "precio": 250,
+            "imagen": ".../images/3.png"
+
+            
+        },
+        {
+            "id": 4,
+            "type": "Buzo",
+            "stock": 5,
+            "precio": 250,
+            "imagen": ".../images/1.png"
+            
+        },
+        {
+            "id": 5,
+            "type": "Buzo",
+            "stock": 5,
+            "precio": 250,
+            "imagen": ".../images/2.png"
+            
+        }
+
+    ]
+}

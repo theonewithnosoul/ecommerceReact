@@ -1,34 +1,65 @@
-import React from 'react'
-import Button from 'react-bootstrap/Button';
-import Container from 'react-bootstrap/Container';
-import Col from 'react-bootstrap/Col';
-import Card from 'react-bootstrap/Card';
-import Row from 'react-bootstrap/Row';
+import React, { useState, useEffect } from 'react'
+import ItemList from './ItemList';
+
+
+//Images
 import Uno from '../components/images/stock/1.png';
-import ItemCount from './ItemCount';
+import Dos from '../components/images/stock/2.png';
+import Tres from '../components/images/stock/3.png';
 
 
+const ItemListContainer = () => {
+  const [stock, setStock] = useState([])
 
-const ItemListContainer = ({ buyButton }) => {
+  useEffect(() => {
+    const promise = new Promise((resolve) => {
+      setTimeout(() => {
+
+        resolve([
+          {
+            id: 1,
+            type: 'buzo',
+            stock: 5,
+            price: 200,
+            image: Uno
+          },
+          {
+            id: 2,
+            type: 'buzo',
+            stock: 2,
+            price: 1000,
+            image: Dos
+          },
+          {
+            id: 3,
+            type: 'buzo',
+            stock: 3,
+            price: 300,
+            image: Tres
+          },
+          {
+            id: 4,
+            type: 'buzo',
+            stock: 3,
+            price: 300,
+            image: Uno
+          }
+
+
+        ])
+      }, 2000)
+    })
+
+    promise.then((result) => {
+      setStock (result)
+    })
+  })
+
+
   return (
-    <Container>
-      <Row>
-        <Col><Card style={{ width: '18rem' }}>
-          <Card.Img variant="top" src={Uno} />
-          <Card.Body>
-            <Card.Title>Producto</Card.Title>
-            <Card.Text>
-              Some quick example text to build on the card title and make up the bulk of
-              the card's content.
-            </Card.Text>
-            <div className="row">
-              <ItemCount />
-              <Button className="mt-3" variant="primary">{buyButton}</Button>
-            </div>
-          </Card.Body>
-        </Card></Col>
-      </Row>
-    </Container>
+
+    <ItemList stock={stock}></ItemList>
+
   )
 }
 export default ItemListContainer;
