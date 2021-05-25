@@ -84,7 +84,7 @@ const ItemListContainer = () => {
     })
 
     promise.then((result) => {
-      setStock (result)
+      setStock(result)
     })
   })
 
