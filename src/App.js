@@ -29,7 +29,7 @@ function App() {
 					<Route path='/category/:id'>
 						<ItemListContainer />
 					</Route>
-					<Route path='/item/:id'>
+					<Route path='/item/:itemId'>
 						<ItemDetailContainer />
 					</Route>
 					{/* <Route path='/cart'>

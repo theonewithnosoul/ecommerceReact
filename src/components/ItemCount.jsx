@@ -2,17 +2,30 @@ import React, { useState } from 'react';
 import AddIcon from '@material-ui/icons/Add';
 import RemoveIcon from '@material-ui/icons/Remove';
 import Button from 'react-bootstrap/Button';
+import Data from '../stock.json'
 
 
-const ItemCount = ({ value = 0, stock = 5, addOn, buyButton }) => {
+const ItemCount = ({ value = 1, stock, addOn, buyButton }) => {
 
     let [counter, setCounter] = useState(value);
 
 
     //HandleAdd
+    // const handleAdd = () => {
+    //     if (counter < Data.stock){
+
+    //         setCounter (counter => counter + 1)
+    //     }
+    // }
     const handleAdd = (e) => setCounter((c) => c + 1);
 
     //Handle substract
+    //  const handleAdd = () => {
+    //     if (counter < Data.stock){
+
+    //         setCounter (counter => counter + 1)
+    //     }
+    // }
     const handleSubstract = (e) => setCounter((c) => c - 1);
 
 
@@ -35,7 +48,7 @@ const ItemCount = ({ value = 0, stock = 5, addOn, buyButton }) => {
                     </div>
                 </div>
                 <div className="row">
-                    <Button disabled = {counter < 1} type='button' className="mt-3 " variant="primary" onClick={addOn}>{buyButton}</Button>
+                    <Button disabled={counter < 1} type='button' className="mt-3 " variant="primary" onClick={addOn}>{buyButton}</Button>
                 </div>
             </div>
         </>

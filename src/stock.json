@@ -33,5 +33,40 @@
         "stock": 5,
         "price": 250,
         "image": "https://images.asos-media.com/products/dickies-ruston-hoodie-in-orange/23395620-1-orange?$n_480w$&wid=476&fit=constrain"
+    },
+    {
+        "id": 6,
+        "type": "Pantalones",
+        "stock": 5,
+        "price": 250,
+        "image": "https://images.asos-media.com/products/adidas-originals-adicolor-three-stripe-logo-straight-fit-track-pants-in-black/21265332-1-black?$n_480w$&wid=476&fit=constrain"
+    },
+    {
+        "id": 7,
+        "type": "Pantalones",
+        "stock": 5,
+        "price": 250,
+        "image": "https://images.asos-media.com/products/nike-loose-fit-fleece-cargo-pants-in-black/21400275-1-black?$n_480w$&wid=476&fit=constrain"
+    },
+    {
+        "id": 8,
+        "type": "Remeras",
+        "stock": 5,
+        "price": 250,
+        "image": "https://images.asos-media.com/products/nike-washed-festival-t-shirt-in-neon-pink/22437040-1-sunsetpulse?$n_480w$&wid=476&fit=constrain"
+    },
+    {
+        "id": 9,
+        "type": "Remeras",
+        "stock": 5,
+        "price": 250,
+        "image": "https://images.asos-media.com/products/topshop-everyday-t-shirt-in-black/24534039-1-black?$n_480w$&wid=476&fit=constrain"
+    },
+    {
+        "id": 10,
+        "type": "Pantalones",
+        "stock": 5,
+        "price": 250,
+        "image": "https://images.asos-media.com/products/nike-dance-cargo-pants-in-white-and-black/22408498-1-white?$n_480w$&wid=476&fit=constrain"
     }
 ]

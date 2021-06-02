@@ -10,14 +10,17 @@ const ItemDetailContainer = () => {
 
 
     useEffect(() => {
+        const filter = Data.filter(item => item.id === +itemId)
+
         const getItems = new Promise((resolve) => {
             setTimeout(() => {
                 resolve(
-                    Data + (itemId ? itemId : "")
+                    filter[0]
                 )
             }, 2000)
         })
-       
+
+
         getItems.then((result) => {
             setItem(result)
             return;
