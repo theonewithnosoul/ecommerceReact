@@ -1,33 +1,35 @@
-import React, {useEffect, useState} from 'react'
+import React, { useEffect, useState } from 'react'
 import ItemDetail from './ItemDetail'
+import Data from '../stock.json'
+import { useParams } from "react-router-dom";
 
 
+const ItemDetailContainer = () => {
+    const [item, setItem] = useState(null);
+    const { itemId } = useParams();
 
-const ItemDetailContainer = (id) => {
-    const [item, setItem] = useState(null)
 
     useEffect(() => {
         const getItems = new Promise((resolve) => {
             setTimeout(() => {
-                resolve({
-                    id: '1',
-                    price: 250,
-                    title: 'Buzo oversize',
-                    description: 'Buzo de algodón oversize' + id,
-                    image: ''
-                })
+                resolve(
+                    Data + (itemId ? itemId : "")
+                )
             }, 2000)
         })
-
-        getItems.then((result) =>{
+       
+        getItems.then((result) => {
             setItem(result)
+            return;
         })
-    })
+    }, [itemId])
 
 
 
-    return(
+    return (
+
         <ItemDetail item={item}></ItemDetail>
+
     )
 }
 

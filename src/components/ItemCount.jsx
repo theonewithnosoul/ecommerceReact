@@ -35,7 +35,7 @@ const ItemCount = ({ value = 0, stock = 5, addOn, buyButton }) => {
                     </div>
                 </div>
                 <div className="row">
-                    <Button disabled={counter >=1} type='button' className="mt-3 " variant="primary" onClick={addOn}>{buyButton}</Button>
+                    <Button disabled = {counter < 1} type='button' className="mt-3 " variant="primary" onClick={addOn}>{buyButton}</Button>
                 </div>
             </div>
         </>

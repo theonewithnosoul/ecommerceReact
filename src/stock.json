@@ -1,48 +1,37 @@
-
-
-{
-    "stock": [
-        {
-            "id": 1,
-            "type": "Buzo",
-            "stock": 5,
-            "precio": 250,
-            "imagen": ".../images/1.png"
-            
-        },
-        {
-            "id": 2,
-            "type": "Buzo",
-            "stock": 5,
-            "precio": 250,
-            "imagen": ".../images/2.png"
-            
-        },
-        {
-            "id": 3,
-            "type": "Buzo",
-            "stock": 5,
-            "precio": 250,
-            "imagen": ".../images/3.png"
-
-            
-        },
-        {
-            "id": 4,
-            "type": "Buzo",
-            "stock": 5,
-            "precio": 250,
-            "imagen": ".../images/1.png"
-            
-        },
-        {
-            "id": 5,
-            "type": "Buzo",
-            "stock": 5,
-            "precio": 250,
-            "imagen": ".../images/2.png"
-            
-        }
-
-    ]
-}
+[
+    {
+        "id": 1,
+        "type": "Buzo",
+        "stock": 5,
+        "price": 250,
+        "image": "https://images.asos-media.com/products/nike-pullover-hoodie-with-swoosh-logo-in-black-bv2654-010/12498117-1-black?$n_480w$&wid=476&fit=constrain"
+    },
+    {
+        "id": 2,
+        "type": "Buzo",
+        "stock": 5,
+        "price": 250,
+        "image": "https://images.asos-media.com/products/nike-essential-pull-over-fleece-hoodie-in-off-white/21391402-1-white?$n_480w$&wid=476&fit=constrain"
+    },
+    {
+        "id": 3,
+        "type": "Buzo",
+        "stock": 5,
+        "price": 250,
+        "image": "https://images.asos-media.com/products/lindex-felicity-super-soft-lounge-hoodie-in-off-white/22554884-1-offwhite?$n_480w$&wid=476&fit=constrain"
+    },
+    {
+        "id": 4,
+        "type": "Buzo",
+        "stock": 5,
+        "price": 250,
+        "image": "https://images.asos-media.com/products/asos-design-oversized-hoodie-in-purple-with-toggle-neck-detail/21711368-1-prismviolet?$n_480w$&wid=476&fit=constrain"
+    },
+    {
+        "id": 5,
+        "type": "Buzo",
+        "stock": 5,
+        "price": 250,
+        "image": "https://images.asos-media.com/products/dickies-ruston-hoodie-in-orange/23395620-1-orange?$n_480w$&wid=476&fit=constrain"
+    }
+]
