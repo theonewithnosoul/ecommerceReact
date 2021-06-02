@@ -17,7 +17,7 @@ const ItemDetailContainer = () => {
                 resolve(
                     filter[0]
                 )
-            }, 2000)
+            }, 1000)
         })
 
 
@@ -25,15 +25,18 @@ const ItemDetailContainer = () => {
             setItem(result)
             return;
         })
+
     }, [itemId])
 
 
 
     return (
-
-        <ItemDetail item={item}></ItemDetail>
-
+        <>
+            <ItemDetail item={item}></ItemDetail>
+        </>
     )
 }
+
+
 
 export default ItemDetailContainer

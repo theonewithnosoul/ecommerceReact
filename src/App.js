@@ -35,6 +35,16 @@ function App() {
 					{/* <Route path='/cart'>
 						<Cart />
 					</Route> */}
+					<Route path='/category/:itemType'>
+						<ItemDetailContainer />
+					</Route>
+					{/* <Route path='category/:remeras'>
+						<ItemDetailContainer />
+					</Route>
+					<Route path='category/:buzos'>
+						<ItemDetailContainer />
+					</Route> */}
+
 
 
 				</Switch>
