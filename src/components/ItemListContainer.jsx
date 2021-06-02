@@ -15,7 +15,7 @@ import Ocho from '../components/images/stock/8.png';
 
 
 const ItemListContainer = () => {
-  const [stock, setStock] = useState([])
+  const [items, setItems] = useState([])
 
   useEffect(() => {
     const promise = new Promise((resolve) => {
@@ -84,14 +84,16 @@ const ItemListContainer = () => {
     })
 
     promise.then((result) => {
-      setStock(result)
+      setItems(result)
     })
   })
 
 
   return (
+    <div className="container">
+      <ItemList items={items}></ItemList>
+    </div>
 
-    <ItemList stock={stock}></ItemList>
 
   )
 }

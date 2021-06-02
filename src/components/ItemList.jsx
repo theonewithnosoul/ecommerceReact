@@ -5,12 +5,12 @@ import Item from './Item';
 
 
 
-const ItemList = ({ stock = [] }) => {
+const ItemList = ({items = [] }) => {
 
     return (
         <div className="container">
             <div className="row d-flex">
-                {stock?.map(item => <Item buyButton='Comprar' item={item} />)}
+                {items?.map(item => <Item key={item.id}  item={item} />)}
             </div>
         </div>
     )
