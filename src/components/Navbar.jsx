@@ -32,13 +32,15 @@ const Navbarr = () => {
 				<Nav className="justify-content-end" activeKey="/home">
 
 					<Navbar.Collapse id="basic-navbar-nav">
-
-						<DropdownButton id="dropdown-item-button" title="Categorías">
-							<Dropdown.Item as="button"><NavLink exact to='/category/pantalones' activeClassName=' active category'>Pantalones</NavLink></Dropdown.Item>
-							<Dropdown.Item as="button"><NavLink exact to='/category/remeras' activeClassName=' active category'>Remeras</NavLink></Dropdown.Item>
-							<Dropdown.Item as="button"><NavLink exact to='/category/buzos' activeClassName=' active home'>Buzos</NavLink></Dropdown.Item>
-						</DropdownButton>
-						
+						<Nav.Item>
+							<Nav.Link>
+								<DropdownButton id="dropdown-item-button" title="Categorías">
+									<Dropdown.Item as="button"><NavLink exact to='/category/Pantalones' activeClassName=' active category'>Pantalones</NavLink></Dropdown.Item>
+									<Dropdown.Item as="button"><NavLink exact to='/category/Remeras' activeClassName=' active category'>Remeras</NavLink></Dropdown.Item>
+									<Dropdown.Item as="button"><NavLink exact to='/category/Buzos' activeClassName=' active home'>Buzos</NavLink></Dropdown.Item>
+								</DropdownButton>
+							</Nav.Link>
+						</Nav.Item>
 						<Nav.Item>
 							<NavLink exact to='/fav' activeClassName=' active favorites'>
 								<Button className="mr-3" ><img src={favIcon} alt="favorit icon" width="23px" /></Button>{' '}

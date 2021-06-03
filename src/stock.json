@@ -1,37 +1,42 @@
 [
     {
         "id": 1,
-        "type": "Buzo",
+        "type": "Buzos",
         "stock": 5,
         "price": 250,
+        "description": "Buzo deportivo",
         "image": "https://images.asos-media.com/products/nike-pullover-hoodie-with-swoosh-logo-in-black-bv2654-010/12498117-1-black?$n_480w$&wid=476&fit=constrain"
     },
     {
         "id": 2,
-        "type": "Buzo",
+        "type": "Buzos",
         "stock": 5,
         "price": 250,
+        "description": "Buzo deportivo",
         "image": "https://images.asos-media.com/products/nike-essential-pull-over-fleece-hoodie-in-off-white/21391402-1-white?$n_480w$&wid=476&fit=constrain"
     },
     {
         "id": 3,
-        "type": "Buzo",
+        "type": "Buzos",
         "stock": 5,
         "price": 250,
+        "description": "Buzo deportivo",
         "image": "https://images.asos-media.com/products/lindex-felicity-super-soft-lounge-hoodie-in-off-white/22554884-1-offwhite?$n_480w$&wid=476&fit=constrain"
     },
     {
         "id": 4,
-        "type": "Buzo",
+        "type": "Buzos",
         "stock": 5,
         "price": 250,
+        "description": "Buzo deportivo",
         "image": "https://images.asos-media.com/products/asos-design-oversized-hoodie-in-purple-with-toggle-neck-detail/21711368-1-prismviolet?$n_480w$&wid=476&fit=constrain"
     },
     {
         "id": 5,
-        "type": "Buzo",
+        "type": "Buzos",
         "stock": 5,
         "price": 250,
+        "description": "Buzo deportivo",
         "image": "https://images.asos-media.com/products/dickies-ruston-hoodie-in-orange/23395620-1-orange?$n_480w$&wid=476&fit=constrain"
     },
     {
@@ -39,6 +44,7 @@
         "type": "Pantalones",
         "stock": 5,
         "price": 250,
+        "description": "Pantalón deportivo",
         "image": "https://images.asos-media.com/products/adidas-originals-adicolor-three-stripe-logo-straight-fit-track-pants-in-black/21265332-1-black?$n_480w$&wid=476&fit=constrain"
     },
     {
@@ -46,6 +52,7 @@
         "type": "Pantalones",
         "stock": 5,
         "price": 250,
+        "description": "Pantalón deportivo",
         "image": "https://images.asos-media.com/products/nike-loose-fit-fleece-cargo-pants-in-black/21400275-1-black?$n_480w$&wid=476&fit=constrain"
     },
     {
@@ -53,6 +60,7 @@
         "type": "Remeras",
         "stock": 5,
         "price": 250,
+        "description": "Remera",
         "image": "https://images.asos-media.com/products/nike-washed-festival-t-shirt-in-neon-pink/22437040-1-sunsetpulse?$n_480w$&wid=476&fit=constrain"
     },
     {
@@ -60,6 +68,7 @@
         "type": "Remeras",
         "stock": 5,
         "price": 250,
+        "description": "Remera",
         "image": "https://images.asos-media.com/products/topshop-everyday-t-shirt-in-black/24534039-1-black?$n_480w$&wid=476&fit=constrain"
     },
     {
@@ -67,6 +76,7 @@
         "type": "Pantalones",
         "stock": 5,
         "price": 250,
+        "description": "Pantalón deportivo",
         "image": "https://images.asos-media.com/products/nike-dance-cargo-pants-in-white-and-black/22408498-1-white?$n_480w$&wid=476&fit=constrain"
     }
 ]

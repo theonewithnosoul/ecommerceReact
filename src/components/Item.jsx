@@ -13,9 +13,8 @@ const Item = ({ item }) => {
                 <Link to={`/item/${item.id}`}> <Card.Img variant="top" src={item.image} /></Link>
                 <Card.Body>
                     <Card.Title key={item.type}>{item.type}</Card.Title>
-                    <Card.Text>
-                        Some quick example text to build on the card title and make up the bulk of
-                        the card's content.
+                    <Card.Text key={item.description}>
+                        {item.description}
                      </Card.Text>
                     <div key={item.price}>{item.price}</div>
                     <div className="row">

@@ -26,25 +26,13 @@ function App() {
 						<ItemListContainer />
 						{/* <Home /> */}
 					</Route>
-					<Route path='/category/:id'>
+					<Route exact path='/category/:id'>
 						<ItemListContainer />
 					</Route>
 					<Route path='/item/:itemId'>
 						<ItemDetailContainer />
 					</Route>
-					{/* <Route path='/cart'>
-						<Cart />
-					</Route> */}
-					<Route path='/category/:itemType'>
-						<ItemDetailContainer />
-					</Route>
-					{/* <Route path='category/:remeras'>
-						<ItemDetailContainer />
-					</Route>
-					<Route path='category/:buzos'>
-						<ItemDetailContainer />
-					</Route> */}
-
+			
 
 
 				</Switch>
