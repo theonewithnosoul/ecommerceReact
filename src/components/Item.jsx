@@ -16,7 +16,8 @@ const Item = ({ item }) => {
                     <Card.Text key={item.description}>
                         {item.description}
                     </Card.Text>
-                    <div key={item.price}>{item.price}</div>
+                    <div key={item.price}><p className="text-center h5"> ${item.price}</p></div>
+                    
                     <div className="row">
                         <ItemCount buyButton='agregar al carrito' />
                     </div>
