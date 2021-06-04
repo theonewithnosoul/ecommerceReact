@@ -12,7 +12,7 @@ const Item = ({ item }) => {
             <Card style={{ width: '18rem' }}>
                 <Link to={`/item/${item.id}`}> <Card.Img variant="top" src={item.image} /></Link>
                 <Card.Body>
-                    <Card.Title key={item.type}>{item.type}</Card.Title>
+                    <Card.Title key={item.title}>{item.title}</Card.Title>
                     <Card.Text key={item.description}>
                         {item.description}
                      </Card.Text>
