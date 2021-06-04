@@ -12,10 +12,10 @@ const Item = ({ item }) => {
             <Card style={{ width: '18rem' }}>
                 <Link to={`/item/${item.id}`}> <Card.Img variant="top" src={item.image} /></Link>
                 <Card.Body>
-                    <Card.Title key={item.title}>{item.title}</Card.Title>
+                    <Card.Title key={item.title}><strong>{item.title}</strong></Card.Title>
                     <Card.Text key={item.description}>
                         {item.description}
-                     </Card.Text>
+                    </Card.Text>
                     <div key={item.price}>{item.price}</div>
                     <div className="row">
                         <ItemCount buyButton='agregar al carrito' />
