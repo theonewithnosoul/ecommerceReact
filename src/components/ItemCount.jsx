@@ -5,6 +5,8 @@ import Button from 'react-bootstrap/Button';
 import Data from '../stock.json'
 
 
+
+
 const ItemCount = ({ value = 1, stock, addOn, buyButton }) => {
 
     let [counter, setCounter] = useState(value);
@@ -35,7 +37,7 @@ const ItemCount = ({ value = 1, stock, addOn, buyButton }) => {
             <div>
                 <div className="row d-flex justify-content-between p-3">
                     <div className="col-3">
-                        <Button disabled={counter <= 0} variant="outline-primary" onClick={handleSubstract} ><RemoveIcon fontSize="medium" /></Button>
+                        <Button disabled={counter <= 1} variant="outline-primary" onClick={handleSubstract} ><RemoveIcon fontSize="medium" /></Button>
                     </div>
 
                     <div className="col-3">

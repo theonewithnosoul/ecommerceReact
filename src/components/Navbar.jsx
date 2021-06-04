@@ -8,7 +8,7 @@ import DropdownButton from 'react-bootstrap/DropdownButton';
 import Dropdown from 'react-bootstrap/Dropdown'
 import inicioIcon from '../components/images/inicio-icon.png';
 import CartWidget from './CartWidget';
-import { Link, NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 
 const background = {

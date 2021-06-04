@@ -1,8 +1,7 @@
 
 import React from 'react'
 import Item from './Item';
-import Spinner from 'react-bootstrap/Spinner';
-import logo from '../components/images/logo.png';
+
 
 
 
