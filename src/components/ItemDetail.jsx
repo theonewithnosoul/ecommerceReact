@@ -1,13 +1,21 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Spinner from 'react-bootstrap/Spinner';
 import logo from '../components/images/logo.png';
+import ItemCount from './ItemCount';
+import { Link } from 'react-router-dom';
 
 
 
 
 const ItemDetail = ({ item }) => {
+    const [counter, setCounter] = useState(0)
+
+    const addHandler = (contador) => {
+        console.log('se agrego un item', contador)
+        setCounter(contador)
+    }
 
     if (item == null) {
         return (
@@ -23,7 +31,7 @@ const ItemDetail = ({ item }) => {
     }
 
     return <>
-
+        {counter}
         <Card className="text-center">
             {/* <Card.Header>Featured</Card.Header> */}
             <Card.Body>
@@ -37,7 +45,17 @@ const ItemDetail = ({ item }) => {
                             {item.description}
                         </Card.Text>
                         <Card.Text className="text-muted">${item.price}</Card.Text>
-                        <Button variant="primary">Agregar al carrito</Button>
+                        <div className="row">
+                            {counter == 0 ?
+                                <ItemCount stock='6' value='1' addOn={addHandler} buyButton='agregar al carrito' />
+                                :
+                                <Link to='/cart'>
+                                  <Button variant="primary">Terminar mi compra</Button>
+                              </Link>
+                            }
+
+                        </div>
+                        {/* <Button variant="primary">Agregar al carrito</Button> */}
                     </div>
                 </div>
             </Card.Body>

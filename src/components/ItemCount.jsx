@@ -2,14 +2,14 @@ import React, { useState } from 'react';
 import AddIcon from '@material-ui/icons/Add';
 import RemoveIcon from '@material-ui/icons/Remove';
 import Button from 'react-bootstrap/Button';
-import Data from '../stock.json'
 
 
 
 
-const ItemCount = ({ value = 1, stock, addOn, buyButton }) => {
 
-    let [counter, setCounter] = useState(value);
+const ItemCount = ({ value, stock, addOn, buyButton }) => {
+
+    let [counter, setCounter] = useState(parseInt(value));
 
 
     //HandleAdd
@@ -30,7 +30,9 @@ const ItemCount = ({ value = 1, stock, addOn, buyButton }) => {
     // }
     const handleSubstract = (e) => setCounter((c) => c - 1);
 
-
+    const agregar = () => {
+        addOn(counter)
+    }
 
     return (
         <>
@@ -50,8 +52,9 @@ const ItemCount = ({ value = 1, stock, addOn, buyButton }) => {
                     </div>
                 </div>
                 <div className="row">
-                    <Button disabled={counter < 1} type='button' className="mt-3 " variant="primary" onClick={addOn}>{buyButton}</Button>
+                    <Button disabled={counter < 1} type='button' className="mt-3 " variant="primary" onClick={agregar}>{buyButton}</Button>
                 </div>
+
             </div>
         </>
     );
