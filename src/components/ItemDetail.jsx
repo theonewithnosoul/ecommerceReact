@@ -1,21 +1,28 @@
-import React, {useState} from 'react'
+import React, {useState, useContext} from 'react'
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Spinner from 'react-bootstrap/Spinner';
 import logo from '../components/images/logo.png';
 import ItemCount from './ItemCount';
 import { Link } from 'react-router-dom';
+import { CartContext } from '../contexts/CartContext';
+
 
 
 
 
 const ItemDetail = ({ item }) => {
+
     const [counter, setCounter] = useState(0)
+
+    const {addItem, cart} = useContext(CartContext);
 
     const addHandler = (contador) => {
         console.log('se agrego un item', contador)
+        addItem(item, contador)
         setCounter(contador)
     }
+    console.log(cart)
 
     if (item == null) {
         return (

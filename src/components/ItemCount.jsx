@@ -5,8 +5,6 @@ import Button from 'react-bootstrap/Button';
 
 
 
-
-
 const ItemCount = ({ value, stock, addOn, buyButton }) => {
 
     let [counter, setCounter] = useState(parseInt(value));
